@@ -1,3 +1,7 @@
+import { useNavigate } from "react-router-dom"
+import { useRef } from "react"
+import { useSelector, useDispatch } from "react-redux"
+import { login } from "../store/features/auth/authSlice"
 import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import {
@@ -11,6 +15,27 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
 export default function LoginPage() {
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+  const emailRef = useRef()
+  const passwordRef = useRef()
+  const handleSumbit = () => {
+    console.log("clicked")
+    const user = {
+      email: emailRef.current.value,
+      password: passwordRef.current.value
+    }
+    dispatch(login(user)).unwrap().
+      then(res => {
+        console.log(res)
+        if (res.success === true) {
+          navigate("/")
+        }
+      }).catch((error) => {
+        console.log(error)
+      })
+  }
+
   return (
     <>
       <div className="flex justify-center items-center h-screen">
@@ -30,6 +55,7 @@ export default function LoginPage() {
                   type="email"
                   placeholder="m@example.com"
                   required
+                  ref={emailRef}
                 />
               </div>
               <div className="grid gap-2">
@@ -39,9 +65,9 @@ export default function LoginPage() {
                     Forgot your password?
                   </Link>
                 </div>
-                <Input id="password" type="password" required />
+                <Input id="password" type="password" required ref={passwordRef} />
               </div>
-              <Button type="submit" className="w-full">
+              <Button type="button" onClick={() => handleSumbit()} className="w-full">
                 Login
               </Button>
               <Button variant="outline" className="w-full">
