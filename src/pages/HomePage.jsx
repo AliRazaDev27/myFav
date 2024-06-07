@@ -3,4 +3,3 @@ export default function HomePage() {
     <div>HomePage</div>
   )
 }
-
