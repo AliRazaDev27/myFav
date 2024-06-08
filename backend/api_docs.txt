@@ -1,0 +1,5 @@
+GET url:port/books/ - get all books
+
+POST url:port/books/ - add new books
+
+GET url:port/books/load - load all books from data.csv

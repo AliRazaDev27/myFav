@@ -1,8 +1,32 @@
 import bookModel from "../models/bookModel.js"
 import load from "../../loadData.js"
+
 const getAllBooks = async (req, res) => {
-  const books = await bookModel.find()
-  res.json(books)
+  try {
+    const books = await bookModel.find()
+    res.json(books)
+  } catch (error) {
+    res.send(error)
+    console.log(error)
+  }
+}
+const getBooksWithLanguage = async (req, res) => {
+  try {
+    const books = await bookModel.find({ language: req.params.lang })
+    res.json(books)
+  } catch (error) {
+    res.send(error)
+    console.log(error)
+  }
+}
+const getBooksWithCountry = async (req, res) => {
+  try {
+    const books = await bookModel.find({ country: req.params.country })
+    res.json(books)
+  } catch (error) {
+    res.send(error)
+    console.log(error)
+  }
 }
 const addBook = async (req, res) => {
   try {
@@ -22,4 +46,4 @@ const loadData = async (req, res) => {
     res.send(error)
   }
 }
-export { getAllBooks, addBook, loadData }
+export { getAllBooks, addBook, loadData, getBooksWithLanguage, getBooksWithCountry }
