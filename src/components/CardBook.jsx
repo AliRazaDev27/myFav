@@ -1,11 +1,16 @@
 import { useState, useEffect } from 'react'
+import { useSelector } from 'react-redux'
 export default function CardBook({ data }) {
   const [img, setImg] = useState("")
-
+  const selector = useSelector(state => state.auth)
   useEffect(() => {
 
     setImg(data.img + "-M.jpg")
   }, [img, data.img])
+  function addRead() {
+    let userID = selector.user.data._id
+    console.log(`userID ${userID} bookID ${data._id}`)
+  }
   return (
     <>
       <div className="flex border-2 mx-auto">
@@ -21,6 +26,7 @@ export default function CardBook({ data }) {
             <p>{data.language}</p>
           </div>
           <p>{data.description}</p>
+          <div><button onClick={() => addRead()}>Add to Read</button></div>
         </div>
 
       </div>
