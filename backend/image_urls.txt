@@ -1,0 +1,498 @@
+One Hundred Years of Solitude,OL24753802M
+The Great Gatsby,OL22570129M
+Ulysses,OL22136640M
+The Catcher in the Rye,OL6089177M
+Nineteen Eighty Four,OL21733390M
+In Search of Lost Time,OL7798391M
+Lolita,OL40230577M
+To Kill a Mockingbird,OL37027359M
+Moby-Dick,OL31857229M
+Pride and Prejudice,OL47044678M
+Wuthering Heights,OL38586477M
+Don Quixote,undefined
+Crime and Punishment,OL32588103M
+Anna Karenina,OL10601812M
+The Grapes of Wrath,OL37811454M
+War and Peace,OL34941467M
+The Lord of the Rings,OL51694024M
+Catch-22,OL24202886M
+Madame Bovary,OL40236082M
+Jane Eyre,OL7513511M
+The Sound and the Fury,OL24220162M
+Alice's Adventures in Wonderland,OL31754751M
+Middlemarch,OL7455461M
+Adventures of Huckleberry Finn,OL7062714M
+Heart of Darkness,OL35601698M
+Beloved,OL2741128M
+The Divine Comedy,OL7355029M
+Invisible Man,OL24269941M
+The Odyssey,undefined
+Frankenstein,OL35649409M
+The Stranger,OL7144644M
+The Brothers Karamazov,OL32629839M
+Great Expectations,OL45791004M
+The Bible,OL7857322M
+To the Lighthouse,OL16857601M
+Mrs. Dalloway,OL24250155M
+The Iliad,OL24809573M
+Midnight's Children,OL1878138M
+The Trial,OL24384500M
+On the Road,OL7281107M
+The Master and Margarita,OL8908779M
+Brave New World,OL6504102M
+The Magic Mountain,undefined
+Gulliver's Travels,OL26445784M
+David Copperfield,OL44903680M
+Les Misérables,OL24225109M
+Gone With the Wind,OL6343920M
+The Sun Also Rises,OL9274797M
+Their Eyes Were Watching God,OL37937727M
+Things Fall Apart,OL21937024M
+The Color Purple,OL3785820M
+The Red and the Black,undefined
+A Passage to India,OL15111472M
+Slaughterhouse-Five,OL13788314M
+Lord of the Flies,OL5887400M
+"Absalom,OL21494663M
+Rebecca,undefined
+The Scarlet Letter,OL7173915M
+"The Life and Opinions of Tristram Shandy,OL7213318M
+The Diary of a Young Girl,OL38464096M
+Silent Spring,OL834171M
+The Little Prince,undefined
+The Portrait of a Lady,OL7144128M
+Candide,OL22244325M
+Little Women,OL27300715M
+One Thousand and One Nights,OL9074806M
+As I Lay Dying,OL25418211M
+A Portrait of the Artist as a Young Man,OL7188133M
+Native Son,OL30524454M
+The Handmaid's Tale,OL2769393M
+Walden,OL32611725M
+Vanity Fair,OL1567460M
+The Hitchhiker's Guide to the Galaxy,OL444326M
+Animal Farm,OL23269355M
+The Aeneid,OL24620756M
+In Cold Blood,undefined
+Robinson Crusoe,undefined
+The Bell Jar,OL21389163M
+For Whom the Bell Tolls,OL10602076M
+Oedipus the King,OL35079607M
+The Old Man and the Sea,OL7893352M
+Tess of the d'Urbervilles,OL44579342M
+Hamlet,OL26587990M
+Faust,OL24206900M
+Dracula,OL35373336M
+The Prince,OL37826838M
+The Golden Notebook,OL1432579M
+A Clockwork Orange,undefined
+The Age of Innocence,undefined
+Leaves of Grass,undefined
+Pale Fire,undefined
+Tom Jones,OL40213240M
+The Picture of Dorian Gray,undefined
+The Tin Drum,undefined
+Emma,OL13573615M
+Waiting for Godot,OL2058068M
+The Leopard,OL14976059M
+One Flew Over the Cuckoo's Nest,OL27913929M
+Charlotte's Web,OL23248482M
+All Quiet on the Western Front,OL5995440M
+Fictions,OL7523636M
+The Big Sleep,OL16230363M
+The Canterbury Tales,OL7146598M
+Treasure Island,OL40812029M
+The Count of Monte Cristo,OL27388816M
+Fahrenheit 451,OL40236195M
+Paradise Lost,OL20425649M
+The Name of the Rose,OL7687238M
+The Idiot,OL3697081M
+Dune,OL32848840M
+Essays,OL20514400M
+Love in the Time of Cholera,undefined
+Wide Sargasso Sea,OL27911916M
+The Unbearable Lightness of Being,undefined
+The Stories of Anton Chekhov,OL13572296M
+A Farewell to Arms,OL24206828M
+The Good Soldier,OL8998425M
+My Antonia,OL22168626M
+Under the Volcano,OL2868875M
+On the Origin of Species,OL23253074M
+The Second Sex,OL7319865M
+The Complete Tales and Poems of Edgar Allan Poe,undefined
+The Hound of the Baskervilles,undefined
+The Metamorphosis,OL26965562M
+Journey to the End of The Night,undefined
+Sons and Lovers,OL7027401M
+First Folio,OL26571043M
+The Wind in the Willows,undefined
+The Heart Is A Lonely Hunter,OL7820971M
+Doctor Zhivago,undefined
+"Rabbit,undefined
+Fathers and Sons,OL7186470M
+The Castle,OL1564581M
+Harry Potter And The Philosopher's Stone,OL22856696M
+The Plague,OL13508387M
+Dead Souls,undefined
+Song of Solomon,OL24220123M
+Antigone,OL3554660M
+Buddenbrooks,OL7227259M
+Lord Jim,OL14020943M
+The Autobiography of Malcolm X,OL19471394M
+The Maltese Falcon,OL9021179M
+The Republic,OL28654471M
+The Interpretation of Dreams,OL32303359M
+The Man Without Qualities,OL27731594M
+Demons,OL24777120M
+Orlando: A Biography,undefined
+Steppenwolf,OL12761348M
+Confessions,undefined
+The House of Mirth,OL27941732M
+Portnoy's Complaint,OL23251525M
+The Spy Who Came in From the Cold,OL5909204M
+Doctor Faustus,OL17628204M
+The Talented Mr. Ripley,OL9834184M
+The Tale of Genji,OL7638256M
+I Know Why the Caged Bird Sings,undefined
+The Three Musketeers,OL50525526M
+Howards End,OL6637893M
+The Call of the Wild,OL35698302M
+Bleak House,OL23281904M
+An American Tragedy,OL37847134M
+Light in August,OL6074047M
+The Woman in White,OL7881235M
+Winnie the Pooh,OL16560587M
+All the King's Men,OL3943365M
+Brideshead Revisited,OL10601329M
+The House of the Spirits,undefined
+Tender Is the Night,OL18337526M
+The Double Helix,OL7927065M
+Franz Kafka: The Complete Stories,OL22794897M
+Fear and Loathing in Las Vegas,OL9218785M
+Blood Meridian,undefined
+The Prime of Miss Jean Brodie,OL1426143M
+Uncle Tom's Cabin,OL26244385M
+Communist Manifesto,OL40094193M
+A Confederacy of Dunces,OL9827763M
+A Room of One's Own,OL23264959M
+The Complete Stories of Flannery O'Connor,undefined
+The Shining,OL23253707M
+Watership Down,OL17721910M
+The Structure of Scientific Revolutions,OL5857529M
+The Adventures of Augie March,OL3686568M
+Gravity's Rainbow,OL922236M
+The Jungle,OL13439738M
+Lady Chatterley's Lover,OL20699212M
+The Time Machine,OL27553880M
+The Remains of the Day,OL7856480M
+One Day in the Life of Ivan Denisovich,OL40099880M
+The Hobbit,OL51711263M
+Poems of Emily Dickinson,OL7195116M
+The Secret History,OL3319855M
+The Moviegoer,OL1024917M
+The Gulag Archipelago,undefined
+Nostromo,OL24240620M
+And Then There Were None,OL32520899M
+Herzog,OL24768341M
+The Waste Land,OL1317145M
+A Wizard of Earthsea,OL9137999M
+The Awakening,OL528856M
+Gargantua and Pantagruel,OL27766942M
+U.S.A. Trilogy,undefined
+A Wrinkle In Time,OL27082436M
+A House for Mr. Biswas,OL6789273M
+Decameron,undefined
+A Tree Grows in Brooklyn,OL24843188M
+Father Goriot,undefined
+The Ambassadors,OL3563011M
+Atonement,OL3955749M
+"The Lion,OL7265111M
+Dangerous Liaison,OL10739104M
+Fairy Tales and Stories,OL7121802M
+The Pickwick Papers,OL12729141M
+Kim,OL9160809M
+Housekeeping,OL4109190M
+White Teeth,OL13356816M
+The Good Soldier Svejk,undefined
+Collected Poems of W. B. Yeats,undefined
+Medea,OL24348602M
+Of Mice and Men,undefined
+The Life of Samuel Johnson,OL5823851M
+War of the Worlds,OL9236546M
+The World According to Garp,OL34420115M
+The Corrections,OL10751586M
+Atlas Shrugged,OL8109283M
+Macbeth,OL3306363M
+The God of Small Things,OL31390125M
+Tropic of Cancer,OL3080148M
+The Stand,OL25159731M
+Women in Love,OL14048584M
+The Adventures of Tom Sawyer,OL34596309M
+Cold Comfort Farm,OL10635207M
+Jude the Obscure,OL40216055M
+The Once and Future King,OL23243757M
+The Strange Case of Dr. Jekyll and Mr. Hyde,OL3682767M
+Babbitt,OL15119056M
+The Complete Sherlock Holmes,OL15178275M
+Siddhartha,OL21265353M
+A Tale of Two Cities,undefined
+Lucky Jim,OL7352061M
+Democracy in America,OL44217743M
+The Charterhouse of Parma,undefined
+Ivanhoe,OL3305062M
+Molloy,OL9160988M
+Bonfire of the Vanities,OL31867325M
+The Godfather,undefined
+Disgrace,OL3989045M
+American Pastoral,OL1009341M
+Man's Fate,OL22917701M
+Foundation,OL51565403M
+Oedipus at Colonus,OL37937728M
+Oresteia,OL23323799M
+If This Is a Man,OL9327075M
+Neuromancer,OL3963678M
+The Mayor of Casterbridge,OL9882269M
+Nausea,OL26819170M
+Confessions of Zeno,undefined
+The Things They Carried,OL2216568M
+King Lear,OL25918818M
+Go Tell it on the Mountain,OL9304364M
+Giovanni's Room,OL9304349M
+The Murder of Roger Ackroyd,OL46524697M
+The Counterfeiters,OL16451491M
+A Sentimental Education,OL7769619M
+"Are You There God? It's Me,OL35687343M
+Possession,OL1566125M
+Of Human Bondage,OL13364342M
+The Chronicles of Narnia,OL3962556M
+Anne of Green Gables,OL32606162M
+The Turn of the Screw,OL5982605M
+If on a Winter's Night a Traveller,OL33897033M
+The Adventures of Oliver Twist,undefined
+Twenty Thousand Leagues Under the Sea,undefined
+Stranger in a Strange Land,OL48575573M
+The Left Hand Of Darkness,OL31935740M
+The Wind-Up Bird Chronicle,OL40219065M
+Brighton Rock,undefined
+Epic of Gilgamesh,OL7355093M
+A Prayer for Owen Meany,OL18352190M
+The Haunting of Hill House,OL3558861M
+Thus Spake Zarathustra,undefined
+Oblomov,OL7149319M
+"Winesburg,OL7191053M
+The End of the Affair,OL9300504M
+Persuasion,undefined
+"The Sea,OL7893352M
+The Flowers of Evil,undefined
+The Sorrows of Young Werther,OL32693076M
+A Room With a View,OL9790699M
+The Stories of John Cheever,OL6804710M
+Do Androids Dream of Electric Sheep?,OL9387971M
+Invisible Cities,OL29472209M
+The Good Earth,OL11036351M
+A Season in Hell,OL7573850M
+At Swim Two-Birds,OL7349581M
+The Moonstone,OL11424127M
+Pedro Páramo,OL18434271M
+The Lover,OL9480640M
+The Joy Luck Club,OL17804947M
+The Road,OL7281107M
+Hunger,OL37079404M
+Infinite Jest,OL9674499M
+Labyrinths,undefined
+White Noise,OL2531465M
+"Look Homeward,OL789091M
+"I,OL26334481M
+The Alchemist,OL9245094M
+The Tempest,OL16499017M
+Memoirs of Hadrian,undefined
+The Poems of Robert Frost,OL8590144M
+The Histories of Herodotus,OL16546890M
+Darkness at Noon,OL34411292M
+The Confessions of Jean-Jacques Rousseau,undefined
+Mahabharata,OL32420603M
+Household Tales,OL34917341M
+A Vindication of the Rights of Woman,undefined
+The Red Badge of Courage,OL7180620M
+Nightwood,OL7857737M
+East of Eden,OL22640535M
+Berlin Alexanderplatz,OL3188377M
+Naked Lunch,OL5798389M
+Money,OL8408265M
+A Doll's House,OL8902417M
+Finnegans Wake,OL24371908M
+Out of Africa,OL3027201M
+A Dance to the Music of Time,OL1120726M
+The Tartar Steppe,OL7883490M
+The Old Wives' Tale,OL13535953M
+The Wonderful Wizard of Oz,OL8155451M
+Metamorphoses,OL24441769M
+The Elements of Style,undefined
+The Mill on the Floss,OL14022820M
+"Speak,OL9587663M
+Zorba the Greek,OL45234608M
+A Bend in the River,OL4732867M
+A Good Man Is Hard to Find,OL1734634M
+Pippi Longstocking,OL27558335M
+"Cry,OL37060278M
+The Electric Kool-Aid Acid Test,undefined
+Leviathan,OL24212395M
+Let Us Now Praise Famous Men,OL2041442M
+Ragtime,OL9148632M
+His Dark Materials,OL17905319M
+Clarissa,OL7045264M
+The Shipping News,OL1726253M
+Pensées,OL24216437M
+A Suitable Boy,OL9002850M
+Relativity,OL3970849M
+Sophie's Choice,OL21501315M
+Death of Virgil,undefined
+Germinal,OL24441001M
+The Power and the Glory,OL3956570M
+"The General Theory of Employment,OL27635189M
+The Last of the Mohicans,OL7165874M
+Pilgrim's Progress,undefined
+The Day of the Locust,OL7577076M
+Malone Dies,OL7424836M
+Homage to Catalonia,OL25447113M
+The Complete Works of Plato,OL9556943M
+A Brief History of Time,OL19989976M
+Le Morte d'Arthur,OL24144150M
+The Secret Garden,OL37044748M
+Stories of Ernest Hemingway,undefined
+Rabbit Redux,OL1024898M
+The Daughter of Time,OL24204720M
+The Princess of Cleves,OL32766088M
+Independent People,OL8626240M
+Ethan Frome,OL7215847M
+Zen and the Art of Motorcycle Maintenance,OL26618874M
+Our Mutual Friend,OL45634656M
+The Decline and Fall of the Roman Empire,OL17945484M
+I Capture the Castle,OL10925253M
+A Christmas Carol,undefined
+The Bacchae,OL5457008M
+2001: A Space Odyssey,undefined
+Black Lamb and Grey Falcon,OL20764588M
+Rabbit Is Rich,OL1024929M
+The Crying of Lot 49,OL9238913M
+The Waves,OL7384287M
+Regeneration,OL24246328M
+The Feminine Mystique,OL7348459M
+Wings of the Dove,OL24224157M
+The Hunchback of Notre-Dame,undefined
+A Fine Balance,OL26657196M
+The Day of the Jackal,OL15300691M
+The Return of the Native,OL22035808M
+Never Let Me Go,OL9129121M
+The Forsyte Saga,OL7161011M
+Nights At The Circus,OL25966585M
+The Alexandria Quartet,OL7855611M
+Meditations,OL9863622M
+The Brief Wondrous Life of Oscar Wao,OL11686853M
+The Glass Bead Game,OL11018623M
+The Poisonwood Bible,OL7857322M
+The Rainbow,OL7025375M
+Kristin Lavransdatter,OL9351811M
+Critique of Pure Reason,OL35429391M
+Bonjour Tristesse,OL3946758M
+"So Long,OL22351808M
+The Civil War,OL1423261M
+Murder on the Orient Express,OL32440766M
+The Death of Ivan Ilyich,OL25464743M
+American Psycho,OL1857983M
+Through the Looking Glass,OL21298716M
+Ferdydurke,OL3430409M
+The Thirty-Nine Steps,OL9300406M
+Das Kapital,OL28406535M
+The Siege of Krishnapur,OL3293029M
+Maus,OL7698522M
+Silas Marner,OL27793687M
+Quo Vadis,OL24197236M
+Main Street,OL7140111M
+The Varieties of Religious Experience,OL3183630M
+Schindler's List,OL3490717M
+The French Lieutenant's Woman,OL447207M
+The Phantom Tollbooth,OL17148283M
+The Vicar of Wakefield,OL19372613M
+The Private Memoirs and Confessions of a Justified Sinner,OL3636097M
+Sister Carrie,OL7100747M
+Underworld,OL668062M
+Play It As It Lays,OL7424229M
+Perfume,OL32283353M
+Where the Wild Things Are,OL7292063M
+The Death of the Heart,OL9271345M
+The Affluent Society,OL16507867M
+Notes from the Underground,OL31888239M
+The Wealth of Nations,OL38580611M
+Collected Poems,OL21500765M
+Eugene Onegin,OL32739654M
+Beowulf,OL7453741M
+A Streetcar Named Desire,OL18203184M
+Waiting for the Barbarians,OL24949199M
+The Golden Bowl,OL6650927M
+The Education of Henry Adams,OL5830199M
+Far from the Madding Crowd,OL8978444M
+The English Patient,OL1744216M
+A Hero of Our Time,OL27452291M
+Solaris,OL35607043M
+The Man Who Loved Children,OL7931445M
+Crash: A Novel,OL26773843M
+Dubliners,OL14005342M
+Life and Fate,OL9273930M
+Electra,OL1118630M
+The Autobiography of Alice B. Toklas,OL2216728M
+Gilead,OL3311020M
+Moll Flanders,OL40292812M
+The Quran,OL13170807M
+Middlesex,OL35661703M
+Black Beauty,OL9730766M
+Harry Potter And The Prisoner Of Azkaban,OL26234270M
+Cloud Atlas,undefined
+"Life,OL17860982M
+The Savage Detectives,OL7423175M
+The Magus,OL18514415M
+Philosophical Investigations,OL6244351M
+The Cherry Orchard,undefined
+We,undefined
+The Bluest Eye,OL27900721M
+Call It Sleep,OL5800431M
+The Joy of Cooking,OL24651394M
+The Devil to Pay in the Backlands,undefined
+The Secret Agent,OL2640257M
+Death in Venice,OL2060994M
+The Postman Always Rings Twice,OL12953693M
+Analects,OL5317783M
+The Third Policeman,OL628599M
+Kindred,OL24284992M
+Austerlitz,OL3941769M
+Red Harvest,OL7699782M
+Ada or Ardor,undefined
+Nine Stories,OL7601398M
+The Fountainhead,undefined
+The Unnamable,OL26970943M
+Adam Bede,OL24199433M
+The Right Stuff,OL13236113M
+Breakfast at Tiffany's,OL7351911M
+Rabbit at Rest,OL1024899M
+The Art of War,OL8113166M
+The Way We Live Now,OL4272501M
+The Naked and the Dead,OL4110788M
+The Betrothed,OL24235242M
+The Souls of Black Folk,OL5753868M
+The Book of Disquiet,undefined
+The Thorn Birds,OL25439032M
+Prometheus Bound,OL8908938M
+Season of Migration to the North,undefined
+Wise Blood,OL7855902M
+The House of the Seven Gables,OL19374340M
+2666,OL9129070M
+The Federalist Papers,OL3380019M
+Journey to the West,OL36883580M
+De Rerum Natura,OL8302405M
+Cousin Bette,OL24138432M
+Harry Potter and the Goblet of Fire,OL25683482M
+"Charlie And The Chocolate Factory,OL5883038M
+The Sheltering Sky,OL26571580M
+The Sonnets,OL9488121M
+The Nicomachean Ethics,undefined
+"Tinker,OL20299199M

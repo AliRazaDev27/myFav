@@ -32,8 +32,8 @@ const bookSchema = new mongoose.Schema({
   genre: {
     type: String
   },
-  haveRead: {
-    type: Boolean
+  img: {
+    type: String
   }
 }, { timestamps: true })
 const bookModel = mongoose.model("book", bookSchema)
