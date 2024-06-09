@@ -2,15 +2,15 @@ import axios from 'axios'
 export const loginUser = async (inputValues) => {
   console.log("authservice")
   try {
-    const response = await axios.post("http://localhost:3000/api/users/login",
+    const response = await axios.post("http://localhost:3000/users/login",
       inputValues,
       {
-        withCredentials: true,
         headers: {
           'Content-Type': 'application/json'
         }
       }
     )
+    console.log(response)
     return response.data
   } catch (error) {
     const errorMessage = error.response?.data?.message || error.message || 'An error occurred'
