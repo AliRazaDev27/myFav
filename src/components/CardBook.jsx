@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 export default function CardBook({ data }) {
@@ -8,8 +9,13 @@ export default function CardBook({ data }) {
     setImg(data.img + "-M.jpg")
   }, [img, data.img])
   function addRead() {
-    let userID = selector.user.data._id
-    console.log(`userID ${userID} bookID ${data._id}`)
+    try {
+      let userID = selector.user.data._id
+      axios.post(`http://localhost:3000/finished/books/`, { userID: userID, bookID: data._id })
+      console.log(`userID ${userID} bookID ${data._id}`)
+    } catch (err) {
+      console.log(err)
+    }
   }
   return (
     <>

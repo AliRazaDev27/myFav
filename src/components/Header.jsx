@@ -11,7 +11,18 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Input } from "@/components/ui/input"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { logout } from "../store/features/auth/authSlice.js"
+import { useDispatch } from "react-redux"
 export default function Header() {
+  const dispatch = useDispatch()
+  async function handleLogout() {
+    console.log("logout")
+    try {
+      dispatch(logout())
+    } catch (error) {
+      console.log(error)
+    }
+  }
   return (
     <header className="sticky top-0 flex h-16 items-center gap-4 border-b bg-white px-4 md:px-6">
       <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
@@ -108,7 +119,7 @@ export default function Header() {
             <DropdownMenuItem>Settings</DropdownMenuItem>
             <DropdownMenuItem>Support</DropdownMenuItem>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>Logout</DropdownMenuItem>
+            <DropdownMenuItem><Button type="button" onClick={() => handleLogout()}>Logout</Button></DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
       </div>

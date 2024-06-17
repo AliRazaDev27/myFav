@@ -29,8 +29,8 @@ export const registerUser = async (req, res) => {
 }
 export const logoutUser = async (req, res) => {
   try {
-    res.send("logout")
+    res.cookie("token", "", { httpOnly: true, secure: true, expires: new Date(0) }).send({ success: true, message: "log out successful" })
   } catch (error) {
-    res.send(error)
+    res.send({ success: false, message: error })
   }
 }

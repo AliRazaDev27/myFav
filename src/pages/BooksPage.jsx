@@ -1,9 +1,12 @@
+import { useSelector } from "react-redux"
 import axios from "axios"
 import { useState, useEffect } from "react"
 import CardBook from "../components/CardBook"
 
 export default function BooksPage() {
   const [books, setBooks] = useState([])
+  const user = useSelector(state => state.auth?.user?.data?._id) || null
+  console.log(user)
   const [countries, setCountries] = useState([])
   const [languages, setLanguages] = useState([])
 
@@ -41,6 +44,16 @@ export default function BooksPage() {
       console.log(error)
     }
   }
+  const loadFinished = async () => {
+    try {
+      const user = "6665299cd5539d5ac1bc1403"
+      const data = await axios.get("http://localhost:3000/finished/books/" + user)
+      console.log(data.data.bookIds)
+      setBooks(data.data.bookIds)
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   useEffect(() => {
     loadData()
@@ -67,6 +80,7 @@ export default function BooksPage() {
               )
             })}
           </select>
+          <button type="button" onClick={() => loadFinished()}>Load Finished</button>
         </form>
       </div>
       <div className="p-4">

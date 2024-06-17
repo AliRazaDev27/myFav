@@ -9,6 +9,10 @@ const finishedSchema = new mongoose.Schema({
   bookIds: {
     type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'book' }],
     required: true
+  },
+  dramaIds: {
+    type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Drama' }],
+    required: true
   }
 }, { timestamps: true });
 export default mongoose.model("finished", finishedSchema)

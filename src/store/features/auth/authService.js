@@ -10,6 +10,9 @@ export const loginUser = async (inputValues) => {
         }
       }
     )
+    if (response.data.success === true) {
+      window.localStorage.setItem("user", JSON.stringify(response.data))
+    }
     console.log(response)
     return response.data
   } catch (error) {
@@ -18,4 +21,15 @@ export const loginUser = async (inputValues) => {
   }
 
 }
-export default { loginUser }
+export const logoutUser = async () => {
+  try {
+    const response = await axios.get("http://localhost:3000/users/logout")
+    if (response.data.success === true) {
+      window.localStorage.removeItem("user")
+    }
+    return response.data
+  } catch (error) {
+    console.log(error)
+  }
+}
+export default { loginUser, logoutUser }
