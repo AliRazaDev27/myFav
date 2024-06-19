@@ -14,10 +14,12 @@ import { Button } from "@/components/ui/button"
 
 export default function DramasPage() {
   const [dramas, setDramas] = useState([])
+  console.log(dramas)
   const [currentPage, setCurrentPage] = useState(1)
   const loadData = async () => {
     try {
       const data = await axios.get("http://localhost:3000/dramas?page=" + currentPage)
+      console.log(data.data)
       setDramas(data.data.dramas)
     } catch (error) {
       console.log(error)
