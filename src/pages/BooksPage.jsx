@@ -5,6 +5,7 @@ import CardBook from "../components/CardBook"
 
 export default function BooksPage() {
   const [books, setBooks] = useState([])
+  console.log(books)
   const user = useSelector(state => state.auth?.user?.data?._id) || null
   console.log(user)
   const [countries, setCountries] = useState([])
@@ -30,7 +31,7 @@ export default function BooksPage() {
   const loadData = async () => {
     try {
       const data = await axios.get("http://localhost:3000/books")
-      setBooks(data.data)
+      setBooks(data.data.books)
     } catch (error) {
       console.log(error)
     }

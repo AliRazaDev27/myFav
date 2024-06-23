@@ -14,14 +14,65 @@ const getFinishedBooks = async (req, res) => {
 const getFinishedDramas = async (req, res) => {
   try {
     console.log(req.params.userID)
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+    const skip = (page - 1) * limit;
     //TODO: Add Select method on required field
-    const data = await finishedModel.findOne({ userId: req.params.userID }).populate("dramaIds")
-    res.send(data)
+
+    const result = await finishedModel.aggregate([
+      { $match: { userId: req.params.userID } },
+      {
+        $facet: {
+          totalCount: [
+            { $unwind: "$dramaIds" },
+            { $count: "count" }
+          ],
+          paginatedData: [
+            { $unwind: "$dramaIds" },
+            { $skip: parseInt(skip) },
+            { $limit: parseInt(limit) },
+            {
+              $lookup: {
+                from: "dramas", // collection name of dramas
+                localField: "dramaIds",
+                foreignField: "_id",
+                as: "dramaDetails"
+              }
+            },
+            { $unwind: "$dramaDetails" },
+            {
+              $group: {
+                _id: "$_id",
+                dramaDetails: { $push: "$dramaDetails" }
+              }
+            },
+            {
+              $project: {
+                _id: 0,
+                dramaDetails: 1
+              }
+            }
+          ]
+        }
+      }
+    ]);
+
+    const totalCount = result[0].totalCount[0]?.count || 0;
+    const paginatedData = result[0].paginatedData[0]?.dramaDetails || [];
+    res.send({
+      page,
+      limit,
+      // total: data.dramaIds.length,
+      // totalPages: Math.ceil(data.dramaIds.length / limit),
+      dramas: paginatedData,
+      totalCount
+    })
   } catch (error) {
     res.send(error)
   }
 }
 const postFinishedBooks = async (req, res) => {
+  console.log(req.body)
   try {
     const finished = await finishedModel.findOne({ userId: req.body.userID })
     if (!finished) {
@@ -44,14 +95,13 @@ const postFinishedBooks = async (req, res) => {
     res.status(400).send(error)
   }
 }
-
 const postFinishedDramas = async (req, res) => {
   try {
-    const finished = await finishedModel.findOne({ userId: req.body.userID })
+    const finished = await finishedModel.findOne({ userId: req.body.userId })
     if (!finished) {
 
       console.log("userid not exist")
-      const newFinished = new finishedModel({ userId: req.body.userID, dramaIds: [req.body.dramaId] })
+      const newFinished = new finishedModel({ userId: req.body.userId, dramaIds: [req.body.dramaId] })
       newFinished.save()
       res.status(201).send("saved")
     }

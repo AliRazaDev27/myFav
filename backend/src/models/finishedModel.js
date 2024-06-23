@@ -8,11 +8,11 @@ const finishedSchema = new mongoose.Schema({
   },
   bookIds: {
     type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'book' }],
-    required: true
+    default: []
   },
   dramaIds: {
     type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Drama' }],
-    required: true
+    default: []
   }
 }, { timestamps: true });
 export default mongoose.model("finished", finishedSchema)

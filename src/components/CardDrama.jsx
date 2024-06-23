@@ -29,8 +29,10 @@ export default function CardDrama({ data }) {
   const descriptionRef = useRef("")
 
   const user = useSelector(state => state.auth.user.data._id)
-  function handleAdd(id) {
-    axios.post("http://localhost:3000/finsihed/dramas", { userID: user, dramaId: id })
+  async function handleAdd(id) {
+    console.log(user)
+    const result = await axios.post("http://localhost:3000/finished/dramas", { userId: user, dramaId: id })
+    console.log(result.data)
   }
   async function handleEdit(id) {
     try {

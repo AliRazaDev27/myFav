@@ -1,5 +1,6 @@
 import Drama from "../models/dramaModel.js";
 import axios from "axios";
+import finishedModel from "../models/finishedModel.js";
 
 const getDramas = async (req, res) => {
   try {
@@ -21,6 +22,24 @@ const getDramas = async (req, res) => {
     });
   } catch (err) {
     res.status(500).json({ message: err.message });
+  }
+}
+const getDramasToWatch = async (req, res) => {
+  try {
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+    const skip = (page - 1) * limit;
+    const data = await finishedModel.findOne({ userId: req.params.id }).populate("dramaIds")
+    const dramas = await Drama.find({ _id: { $nin: data.dramaIds } }).sort({ rating: -1 }).skip(skip).limit(limit)
+    res.json({
+      page,
+      limit,
+      total: dramas.length,
+      totalPages: Math.ceil(dramas.length / limit),
+      dramas
+    })
+  } catch (error) {
+    res.send(error)
   }
 }
 
@@ -53,27 +72,4 @@ const updateDrama = async (req, res) => {
     res.send(error)
   }
 }
-export { getDramas, addDrama, updateDrama }
-
-
-
-// try {
-//   console.log(req.body.id)
-//   const current = await Drama.findById(req.body.id)
-//   const body = {
-//     title,
-//     year,
-//     rating,
-//     genres: genresArray,
-//     tags: tagsArray,
-//     description,
-//     img,
-//     url
-//   }
-//   const drama = await Drama.findOneAndUpdate({ _id: req.body.id }, body, { new: true })
-//   res.status(201).json(drama)
-// }
-// catch (error) {
-//   res.status(400).send(error)
-// }
-//
+export { getDramas, addDrama, updateDrama, getDramasToWatch }

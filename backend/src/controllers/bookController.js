@@ -1,10 +1,19 @@
 import bookModel from "../models/bookModel.js"
-import load from "../../loadData.js"
 
 const getAllBooks = async (req, res) => {
   try {
-    const books = await bookModel.find()
-    res.json(books)
+    const page = parseInt(req.query.page) || 1;
+    const limit = parseInt(req.query.limit) || 10;
+    const skip = (page - 1) * limit;
+    const books = await bookModel.find().skip(skip).limit(limit)
+    const total = await bookModel.find().count()
+    res.json({
+      page,
+      limit,
+      total,
+      totalPages: Math.ceil(total / limit),
+      books
+    })
   } catch (error) {
     res.send(error)
     console.log(error)
@@ -38,12 +47,4 @@ const addBook = async (req, res) => {
     res.status(400).send(error)
   }
 }
-const loadData = async (req, res) => {
-  try {
-    await load()
-    res.send("loaded")
-  } catch (error) {
-    res.send(error)
-  }
-}
-export { getAllBooks, addBook, loadData, getBooksWithLanguage, getBooksWithCountry }
+export { getAllBooks, addBook, getBooksWithLanguage, getBooksWithCountry }
