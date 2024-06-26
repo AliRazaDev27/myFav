@@ -111,7 +111,7 @@ const postFinishedDramas = async (req, res) => {
       const dramaId = req.body.dramaId
       finished.dramaIds = [...finished.dramaIds, dramaId]
       finished.save()
-      res.status(201).send("saved")
+      res.status(201).send({ success: true, message: "Drama added to your list" })
     }
   }
   catch (error) {
@@ -119,4 +119,23 @@ const postFinishedDramas = async (req, res) => {
   }
 }
 
-export { getFinishedBooks, postFinishedBooks, getFinishedDramas, postFinishedDramas }
+const deleteFinishedDramas = async (req, res) => {
+  try {
+    console.log(req.params)
+    const dramaId = req.params.dramaId
+    const userId = req.params.userId
+    const userData = await finishedModel.findOne({ userId: userId })
+    console.log(userData)
+    const index = userData.dramaIds.indexOf(dramaId)
+    console.log(index)
+    if (index > -1) {
+      userData.dramaIds.splice(index, 1)
+      userData.save()
+      res.status(201).send({ success: true, message: "Drama removed from your list" })
+    }
+  } catch (error) {
+    res.send(error)
+  }
+}
+
+export { getFinishedBooks, postFinishedBooks, getFinishedDramas, postFinishedDramas, deleteFinishedDramas }

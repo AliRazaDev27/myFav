@@ -72,4 +72,13 @@ const updateDrama = async (req, res) => {
     res.send(error)
   }
 }
-export { getDramas, addDrama, updateDrama, getDramasToWatch }
+const deleteDrama = async (req, res) => {
+  try {
+    const id = req.params.id
+    const result = await Drama.findByIdAndDelete(id)
+    res.send({ success: true, data: result })
+  } catch (error) {
+    res.send(error)
+  }
+}
+export { getDramas, addDrama, updateDrama, getDramasToWatch, deleteDrama }

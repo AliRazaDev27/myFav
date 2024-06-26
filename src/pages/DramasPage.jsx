@@ -1,3 +1,4 @@
+import Gradient from "../components/Gradient";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import CardDrama from "../components/CardDrama"
 import axios from "axios"
@@ -73,38 +74,40 @@ export default function DramasPage() {
     window.scrollTo(0, 0)
   }, [currentPage])
   return (
-    <div className="container mx-auto py-4">
-      <div className="flex justify-center gap-4">
-        <Button type="button" onClick={() => { setCurrentPage(1); loadWatched() }}>All</Button>
-        <Button type="button" onClick={() => { setCurrentPage(1); loadWatched() }}>Watched</Button>
-        <Button type="button" onClick={() => { setCurrentPage(1); loadUnWatched() }}>Un-Watched</Button>
+    <Gradient>
+      <div className="container mx-auto py-4">
+        <div className="flex justify-center gap-4">
+          <Button type="button" onClick={() => { setCurrentPage(1); loadAllData() }}>All</Button>
+          <Button type="button" onClick={() => { setCurrentPage(1); loadWatched() }}>Watched</Button>
+          <Button type="button" onClick={() => { setCurrentPage(1); loadUnWatched() }}>Un-Watched</Button>
+        </div>
+        <div className="m-4 p-4">
+          {dramas && dramas.map((drama, index) => <CardDrama key={index} data={drama} flag={flag} />)}
+        </div>
+        <Pagination>
+          <PaginationContent>
+            <PaginationItem>
+              <button className="flex items-center justify-center gap-2" value={Number(currentPage) - 1} onClick={(e) => handlePageChange(e)}><GrFormPrevious /> <span>Previous </span></button>
+            </PaginationItem>
+            <PaginationItem>
+              <Button className="bg-white text-black border border-black hover:bg-neutral-300" value={Number(currentPage)} onClick={(e) => handlePageChange(e)}>{Number(currentPage)}</Button>
+            </PaginationItem>
+            <PaginationItem>
+              <Button value={Number(currentPage) + 1} onClick={(e) => handlePageChange(e)}>{Number(currentPage) + 1}</Button>
+            </PaginationItem>
+            <PaginationItem>
+              <Button value={Number(currentPage) + 2} onClick={(e) => handlePageChange(e)}>{Number(currentPage) + 2}</Button>
+            </PaginationItem>
+            <PaginationItem>
+              <PaginationEllipsis />
+            </PaginationItem>
+            <PaginationItem>
+              <button className="flex items-center justify-center gap-2" value={Number(currentPage) + 1} onClick={(e) => handlePageChange(e)}> <span>Next </span><GrFormNext /></button>
+            </PaginationItem>
+          </PaginationContent>
+        </Pagination>
       </div>
-      <div className="m-4 p-4">
-        {dramas && dramas.map((drama, index) => <CardDrama key={index} data={drama} />)}
-      </div>
-      <Pagination>
-        <PaginationContent>
-          <PaginationItem>
-            <button className="flex items-center justify-center gap-2" value={Number(currentPage) - 1} onClick={(e) => handlePageChange(e)}><GrFormPrevious /> <span>Previous </span></button>
-          </PaginationItem>
-          <PaginationItem>
-            <Button className="bg-white text-black border border-black hover:bg-neutral-300" value={Number(currentPage)} onClick={(e) => handlePageChange(e)}>{Number(currentPage)}</Button>
-          </PaginationItem>
-          <PaginationItem>
-            <Button value={Number(currentPage) + 1} onClick={(e) => handlePageChange(e)}>{Number(currentPage) + 1}</Button>
-          </PaginationItem>
-          <PaginationItem>
-            <Button value={Number(currentPage) + 2} onClick={(e) => handlePageChange(e)}>{Number(currentPage) + 2}</Button>
-          </PaginationItem>
-          <PaginationItem>
-            <PaginationEllipsis />
-          </PaginationItem>
-          <PaginationItem>
-            <button className="flex items-center justify-center gap-2" value={Number(currentPage) + 1} onClick={(e) => handlePageChange(e)}> <span>Next </span><GrFormNext /></button>
-          </PaginationItem>
-        </PaginationContent>
-      </Pagination>
-    </div>
+    </Gradient>
   )
 }
 

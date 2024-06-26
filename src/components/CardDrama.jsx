@@ -1,3 +1,6 @@
+import Gradient from "./Gradient";
+import { Badge } from "@/components/ui/badge"
+import { TbMenuDeep } from "react-icons/tb";
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import {
@@ -11,11 +14,26 @@ import {
 } from "@/components/ui/dialog"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import {
+  Menubar,
+  MenubarCheckboxItem,
+  MenubarContent,
+  MenubarItem,
+  MenubarMenu,
+  MenubarRadioGroup,
+  MenubarRadioItem,
+  MenubarSeparator,
+  MenubarShortcut,
+  MenubarSub,
+  MenubarSubContent,
+  MenubarSubTrigger,
+  MenubarTrigger,
+} from "@/components/ui/menubar"
 import axios from "axios"
 import { useSelector } from "react-redux"
-import { useRef } from "react"
+import { useState, useEffect, useRef } from "react"
 import { toast } from "react-toastify"
-export default function CardDrama({ data }) {
+export default function CardDrama({ data, flag }) {
   //TODO: improve layout consistency
   //TODO: add buttons for add/remove
   //TODO: add Search functionality
@@ -29,10 +47,35 @@ export default function CardDrama({ data }) {
   const descriptionRef = useRef("")
 
   const user = useSelector(state => state.auth.user.data._id)
+  function handleFlag(id) {
+    if (flag === "unwatched") {
+      handleAdd(id)
+    }
+    if (flag === "watched") {
+      handleRemove(id)
+    }
+    else {
+      console.log("error in handle flag")
+    }
+  }
   async function handleAdd(id) {
     console.log(user)
     const result = await axios.post("http://localhost:3000/finished/dramas", { userId: user, dramaId: id })
     console.log(result.data)
+    if (result.data.success == true) {
+      console.log(" ADD :: success")
+      toast.success("Added Successfully", { autoClose: 1000 })
+    }
+  }
+
+  async function handleRemove(id) {
+    console.log(user)
+    const result = await axios.delete(`http://localhost:3000/finished/dramas/${id}/${user}`)
+    console.log(result.data)
+    if (result.data.success == true) {
+      console.log(" REMOVE :: success")
+      toast.success("Removed Successfully", { autoClose: 1000 })
+    }
   }
   async function handleEdit(id) {
     try {
@@ -56,6 +99,13 @@ export default function CardDrama({ data }) {
       console.log(error)
     }
   }
+  async function handleDelete(id) {
+    const result = await axios.delete(`http://localhost:3000/dramas/${id}`)
+    if (result.data.success == true) {
+      toast.success("Deleted Successfully", { autoClose: 2000 })
+    }
+    console.log(result.data)
+  }
   return (
     <div className="flex flex-col md:flex-row gap-4 w-full mx-auto my-4 border-2 border-black ">
       <div className="w-full md:w-3/12 border-2 border-red-500">
@@ -65,15 +115,28 @@ export default function CardDrama({ data }) {
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-3xl font-semibold">{data.title}</h1>
-            <p className="mt-2 text-xl"><span className="px-2">{data.year}</span><span className="px-2">{data.rating}</span></p>
+            <p className="flex items-center mt-2 text-xl"><span className="px-4">{data.year}</span><span className="px-2 flex items-center"><Badge className="bg-blue-700 text-sm">{data.rating}</Badge></span></p>
           </div>
-          <div>
-            <button className="font-bold  me-28 border border-sky-600 shadow-lg shadow-sky-500 px-6 py-3 rounded-3xl bg-sky-500 hover:bg-sky-600 text-white" type="button" onClick={() => handleAdd(data._id)}>Add</button>
-            <div>
+          <div className="flex gap-4 justify-end">
+            <button className="font-bold  border border-sky-600 shadow-lg shadow-sky-500 px-6 py-3 rounded-3xl bg-sky-500 hover:bg-sky-600 text-white" type="button" onClick={() => handleFlag(data._id)}>{flag == "watched" ? "Remove" : "Add"}</button>
+            <div className="flex items-center">
               <Dialog>
-                <DialogTrigger asChild>
-                  <Button className="font-bold  me-28 border border-sky-600 shadow-lg shadow-sky-500 px-6 py-3 rounded-3xl bg-sky-500 hover:bg-sky-600 text-white" variant="outline">Edit Profile</Button>
-                </DialogTrigger>
+                <Menubar className="w-min">
+                  <MenubarMenu>
+                    <MenubarTrigger><TbMenuDeep className="w-5 h-5" /></MenubarTrigger>
+                    <MenubarContent>
+                      <MenubarItem>
+                        <DialogTrigger asChild>
+                          <button className="font-bold  px-6 py-3">Edit Profile</button>
+                        </DialogTrigger>
+                      </MenubarItem>
+                      <MenubarSeparator />
+                      <MenubarItem>
+                        <button className="font-bold  px-6 py-3" type="button" onClick={() => handleDelete(data._id)}>Delete</button>
+                      </MenubarItem>
+                    </MenubarContent>
+                  </MenubarMenu>
+                </Menubar>
                 <DialogContent className="sm:max-w-[425px]">
                   <DialogHeader>
                     <DialogTitle>Edit profile</DialogTitle>
